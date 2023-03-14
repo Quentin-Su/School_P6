@@ -1,0 +1,25 @@
+import Data from '../utils/context/ad.json';
+import { Link } from 'react-router-dom';
+import { Card } from '../components/Card';
+import { Banner } from '../components/Banner';
+
+export const HomePage = () => {
+  return (
+    <>
+      <Banner content='Chez vous, partout et ailleurs' bannerClass='home'/>
+      <section className='cards_container'>
+        <div className='cards_content'>
+          {
+            Data.map((value, index) => {
+              return (
+                <Link key={index} to={`accommodation/${value.id}`}>
+                  <Card coverUrl={value.cover} title={value.title} />
+                </Link>
+              );
+            })
+          }
+        </div>
+      </section>
+    </>
+  );
+};
