@@ -120,10 +120,22 @@ main {
     gap: 50px;
 }
 
+/* -- Card Component -- */
 .card_item {
     position: relative;
     height: 300px;
 } 
+
+.card_item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: .4rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
 
 .card_item img {
     width: 100%;
@@ -143,6 +155,43 @@ main {
     padding: 20px;
     font-size: .75rem;
     color: var(--color-white);
+}
+
+/* -- Collapse Component -- */
+.collapse_container {
+    margin: 1.25rem 0;
+}
+.collapse_bar {
+    position: relative;
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    fill: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .2rem;
+    padding: 0 .75rem;
+}
+
+.collapse_bar svg {
+    transition: all .3s ease-in-out;
+}
+
+.collapse_dropdown {
+    background-color: var(--color-grey);
+    padding: calc(.8rem + .3rem) .8rem .8rem .8rem;
+    font-weight: 400;
+    border-radius: .2rem;
+    margin-top: -.3rem;
+}
+
+.collapse_content.opened svg {
+    transform: rotate(-180deg);
+}
+
+/* -- About Page -- */
+.about_collapse {
+    margin: 0 100px;
 }
 
 /* -- Footer Component -- */
