@@ -1,3 +1,5 @@
+import './Card.css';
+
 export const Card = ({ coverUrl, title }) => {
     return (
         <article className='card_item'>

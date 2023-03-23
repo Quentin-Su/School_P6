@@ -1,3 +1,5 @@
+import './Banner.css';
+
 export const Banner = ({ content, bannerClass }) => {
     return (
         <section className={`banner_container banner_${bannerClass}`}>

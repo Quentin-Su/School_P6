@@ -1,4 +1,5 @@
-import { ReactComponent as Icon } from '../utils/assets/kasaIcon.svg';
+import { ReactComponent as Icon } from '../../utils/assets/kasaIcon.svg';
+import './Footer.css';
 
 export const Footer = () => {
   return (

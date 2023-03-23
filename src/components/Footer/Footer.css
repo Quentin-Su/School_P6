@@ -1,0 +1,17 @@
+.footer_container {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 2.5rem 0 1.25rem 0;
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_icon {
+    fill: var(--color-white);
+    height: 1.7rem;
+    margin-bottom: 1.25rem;
+}

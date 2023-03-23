@@ -1,5 +1,6 @@
-import { ReactComponent as Icon } from '../utils/assets/kasaIcon.svg';
+import { ReactComponent as Icon } from '../../utils/assets/kasaIcon.svg';
 import { NavLink } from 'react-router-dom';
+import './Header.css';
 
 export const Header = () => {
   return (

@@ -1,0 +1,31 @@
+.header_container {
+    min-height: 68px;
+}
+
+.header_content {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+}
+
+.header_nav li {
+    margin-left: 2rem;
+}
+
+.header_navLink {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.header_navLink.active {
+    text-decoration: underline;
+}
