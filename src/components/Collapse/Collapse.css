@@ -1,0 +1,49 @@
+.collapse_container {
+    margin: 1.25rem 0;
+}
+
+.collapse_bar {
+    position: relative;
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    fill: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .2rem;
+    padding: 0 .75rem;
+    user-select: none;
+}
+
+.collapse_bar svg {
+    transition: all .29s ease;
+}
+
+.collapse_dropdown {
+    background-color: var(--color-grey);
+    font-weight: 400;
+    border-radius: .2rem;
+}
+
+.collapse_content.opened svg {
+    transform: rotate(-180deg);
+}
+
+
+.collapse_dropdown {
+    overflow: hidden;
+    transition: .4s ease;
+    margin-top: -.3rem;
+}
+
+.collapse_dropdown.closed {
+    max-height: 0;
+}
+
+.collapse_dropdown.opened {
+    max-height: 1000px;
+}
+
+.collapse_dropdown_text {
+    padding: calc(.8rem + .3rem) .8rem .8rem .8rem;
+}
