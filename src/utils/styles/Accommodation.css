@@ -1,0 +1,58 @@
+.accommodation_info_container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 1rem 0;
+}
+
+.accommodation_title_item span,
+.accommodation_host span {
+    font-weight: 500;
+    font-size: .75rem;
+}
+
+.accommodation_title_item h2 {
+    font-weight: 500;
+}
+
+.accommodation_tags_container {
+    margin-top: .8rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.tags_container {
+    margin-right: .4rem;
+}
+
+.accommodation_info_container .accommodation_info_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.accommodation_host {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.accommodation_host span {
+    margin: 0 .4rem;
+}
+
+.accommodation_host img {
+    width: 64px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.accommodation_collapse_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem;
+}
+
+.accommodation_collapse_container .collapse_container {
+    margin: 0 0 1rem 0;
+}
