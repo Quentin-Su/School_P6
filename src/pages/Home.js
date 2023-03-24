@@ -1,7 +1,8 @@
 import Data from '../utils/context/ad.json';
 import { Link } from 'react-router-dom';
-import { Card } from '../components/Card';
-import { Banner } from '../components/Banner';
+import { Card } from '../components/Card/Card';
+import { Banner } from '../components/Banner/Banner';
+import '../utils/styles/Home.css';
 
 export const HomePage = () => {
   return (

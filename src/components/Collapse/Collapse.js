@@ -10,14 +10,24 @@ export const Collapse = (props) => {
 
     return (
         <>
-            <article className='collapse_container'>
+            <article className={props.customClass ? `collapse_container ${props.customClass}` : 'collapse_container'}>
                 <div className={dropdowns ? 'collapse_content opened' : 'collapse_content'}>
                     <div className='collapse_bar' onClick={() => eventClick()}>
                         <span className='collapse_bar_tittle'>{props.title}</span>
                         <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z" /></svg>
                     </div>
                     <div className={dropdowns ? 'collapse_dropdown opened' : 'collapse_dropdown closed'}>
-                        <p className='collapse_dropdown_text'>{props.content}</p>
+                        {
+                            Array.isArray(props.content) && props.content.length > 0 ? (
+                                <div className='collapse_dropdown_text'>
+                                    {
+                                        props.content.map((item, index) => (
+                                            <p key={index} className='dropdown_text_item'>{item}</p>
+                                        ))
+                                    }
+                                </div>
+                            ) : (<p className='collapse_dropdown_text'>{props.content}</p>)
+                        }
                     </div>
                 </div>
             </article>

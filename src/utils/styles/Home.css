@@ -1,0 +1,29 @@
+main {
+    margin: 0 100px;
+}
+
+.cards_container {
+    background-color: #F7F7F7;
+    border-radius: 1.1rem;
+    margin: 1.75rem 0;
+    padding: 2rem;
+}
+
+.cards_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+@media screen and (max-width: 1170px) {
+    .cards_content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .cards_content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
