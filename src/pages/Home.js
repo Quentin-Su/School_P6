@@ -13,7 +13,7 @@ export const HomePage = () => {
           {
             Data.map((value, index) => {
               return (
-                <Link key={index} to={`accommodation/${value.id}`}>
+                <Link key={index} to={`accommodation/${value.id}`} onClick={() => window.scrollTo(0, 0)}>
                   <Card coverUrl={value.cover} title={value.title} />
                 </Link>
               );

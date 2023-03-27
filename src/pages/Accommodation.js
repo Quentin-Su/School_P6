@@ -23,6 +23,13 @@ export const Accommodation = () => {
                     </div>
 
                     <div className='accommodation_tags_container'>
+                        {
+                            data_id.tags.map((value, index) => {
+                                return(
+                                    <Tags key={index} content={value} />
+                                )
+                            })
+                        }
                         <Tags content={data_id.tags}/>
                     </div>
                 </div>
@@ -40,8 +47,8 @@ export const Accommodation = () => {
             </div>
 
             <div className='accommodation_collapse_container'>
-                <Collapse title='Description' content={data_id.description} customClass='radius' />
-                <Collapse title='Équipements' content={data_id.equipments} customClass='radius' />
+                <Collapse title='Description' content={data_id.description} />
+                <Collapse title='Équipements' content={data_id.equipments} />
             </div>
         </>
     );

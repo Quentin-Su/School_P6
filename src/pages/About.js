@@ -10,7 +10,7 @@ export const About = () => {
             <section className='about_collapse'>
                 {
                     AboutContext.map((value, index) => (
-                        <Collapse key={index} title={value.title} content={value.content} />
+                        <Collapse key={index} title={value.title} content={value.content} customClass='large' />
                     ))
                 }
             </section>
