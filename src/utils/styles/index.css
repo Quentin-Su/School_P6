@@ -28,4 +28,28 @@ main {
     display: flex;
     flex-direction: column;
     min-height: calc(100vh - 168px);
+    margin: 0 100px;
+}
+
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    main {
+        margin: 0 20px;
+        min-height: calc(100vh - 87px);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 12px;
+    }
 }

@@ -1,6 +1,6 @@
 .carousel_container {
     position: relative;
-    height: 400px;
+    height: 18rem;
     border-radius: 1rem;
     overflow: hidden;
 }
@@ -72,4 +72,10 @@
 .carousel_content_nav svg {
     height: 3.5rem;
     fill: var(--color-white);
+}
+
+@media screen and (max-width: 576px) {
+    .carousel_content_counter {
+        display: none;
+    }
 }

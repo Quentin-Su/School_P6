@@ -1,10 +1,6 @@
-main {
-    margin: 0 100px;
-}
-
 .cards_container {
     background-color: #F7F7F7;
-    border-radius: 1.1rem;
+    border-radius: 25px;
     margin: 1.75rem 0;
     padding: 2rem;
 }
@@ -12,18 +8,24 @@ main {
 .cards_content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    gap: 2rem;
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1200px) {
     .cards_content {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 768px) {
+    .cards_container {
+        background: none;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
     .cards_content {
         grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
     }
 }

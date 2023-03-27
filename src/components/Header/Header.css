@@ -1,7 +1,3 @@
-.header_container {
-    min-height: 68px;
-}
-
 .header_content {
     padding: 50px 100px;
     display: flex;
@@ -28,4 +24,14 @@
 
 .header_navLink.active {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .header_content {
+        padding: 20px;
+    }
+
+    .header_icon {
+        height: 47px;
+    }
 }

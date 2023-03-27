@@ -14,7 +14,7 @@ export const Collapse = (props) => {
                 <div className={dropdowns ? 'collapse_content opened' : 'collapse_content'}>
                     <div className='collapse_bar' onClick={() => eventClick()}>
                         <span className='collapse_bar_tittle'>{props.title}</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z" /></svg>
+                        <svg viewBox="0 0 28 17" xmlns="http://www.w3.org/2000/svg"><path d="M24.8401 16.3467L27.2001 13.9733L14.0001 0.786651L0.800071 13.9867L3.16007 16.3467L14.0001 5.50665L24.8401 16.3467Z" fill="white"/></svg>
                     </div>
                     <div className={dropdowns ? 'collapse_dropdown opened' : 'collapse_dropdown closed'}>
                         {

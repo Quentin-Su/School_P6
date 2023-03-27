@@ -10,31 +10,35 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: .2rem;
-    padding: 0 .75rem;
     user-select: none;
+    border-radius: 10px;
+    padding: .5rem .8rem;
+    font-size: .75rem;
 }
 
-.collapse_container.radius .collapse_bar {
-    border-radius: .4rem;
+.collapse_container.large .collapse_bar {
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 .collapse_bar svg {
+    height: .7rem;
     transition: all .29s ease;
 }
 
 .collapse_dropdown {
     background-color: var(--color-grey);
     font-weight: 400;
-    border-radius: .2rem;
+    font-size: .75rem;
+    border-radius: 5px;
     overflow: hidden;
     transition: .4s ease;
-    margin-top: -.3rem;
+    margin-top: -1rem;
 }
 
 .collapse_container.radius .collapse_dropdown {
-    border-radius: .4rem;
-    margin-top: -.5rem;
+    border-radius: 10px;
+    margin-top: -1rem;
 }
 
 .collapse_content.opened svg {
@@ -50,9 +54,20 @@
 }
 
 .collapse_dropdown_text {
-    padding: calc(.8rem + .3rem) .8rem .8rem .8rem;
+    padding: calc(.8rem + 1rem) .8rem .8rem .8rem;
 }
 
 .collapse_dropdown_text .dropdown_text_item {
     line-height: 1.35rem;
+} 
+
+@media screen and (max-width: 992px) {
+    .collapse_bar,
+    .collapse_container.large .collapse_bar {
+        font-size: 13px;
+    }
+
+    .collapse_dropdown {
+        font-size: 12px;
+    }
 }

@@ -1,13 +1,15 @@
 .footer_container {
     background-color: var(--color-black);
     color: var(--color-white);
-    padding: 2.5rem 0 1.25rem 0;
+    height: 210px;
 }
 
 .footer_content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: inherit;
 }
 
 .footer_icon {
