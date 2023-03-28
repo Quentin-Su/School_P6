@@ -12,7 +12,7 @@ export default function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<About />} />
         <Route path='accommodation/:id' element={<Accommodation />} />
-        <Route path='error' element={<Error />} />
+        <Route path='*' element={<Error />} />
       </Routes>
     </Layout>
   );

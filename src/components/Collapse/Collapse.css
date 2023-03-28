@@ -21,6 +21,10 @@
     font-size: 1rem;
 }
 
+.collapse_container.large .collapse_dropdown {
+    font-size: 1rem;
+}
+
 .collapse_bar svg {
     height: .7rem;
     transition: all .29s ease;
@@ -33,11 +37,6 @@
     border-radius: 5px;
     overflow: hidden;
     transition: .4s ease;
-    margin-top: -1rem;
-}
-
-.collapse_container.radius .collapse_dropdown {
-    border-radius: 10px;
     margin-top: -1rem;
 }
 
@@ -67,7 +66,8 @@
         font-size: 13px;
     }
 
-    .collapse_dropdown {
+    .collapse_dropdown,
+    .collapse_container.large .collapse_dropdown {
         font-size: 12px;
     }
 }
